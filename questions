@@ -1,0 +1,28 @@
+#what law should be used ?
+#q1
+#little law
+#N = RX
+R <- 0.1
+X <- 128
+N <- R * X
+print (N)
+print ( 'packets in the network' )
+
+#q2
+#interactiv response time law
+# R = M/X0 - Z
+M <- 50
+Z <- 5
+#FROM THIS INFORMATION HOW CAN WE COMPUTE X0
+U <- 0.6
+S <- 0.03
+V <- 4
+X0 <- U / (S*V)
+R <- M / X0 - Z
+print(R)
+print ( 'seconds')
+
+Vi = 4 , Si = 0.03
+x0 = 0.6/4x0.03 =5 tps  
+
+r=50/5 -5 = 5sec
