@@ -1,0 +1,8 @@
+mpstat 1 120
+
+mpstat 1 120 > data.dat
+
+cat data.dat
+
+
+./a.out
