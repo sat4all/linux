@@ -1,0 +1,17 @@
+# this is a comment
+
+
+user { 'devops':
+  ensure => 'present',
+  home => '/home/devops',
+  managehome => true,
+   }
+
+file { 'devops_file' :
+  ensure => present,
+mode => '0644',  #permission of the file
+  content => 'ip address to connect to is : 127.0.0.1',
+path => '/home/devops/devops.txt',
+  owner => 'devops',
+group => 'devops'
+}
